@@ -3,7 +3,7 @@ layout: post
 title:  "Forward pipe operator in F#"
 date:   2020-01-26
 ---
-Recently I started an introduction [series](https://www.youtube.com/playlist?list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) about F#.
+I recently started watching an introduction [series](https://www.youtube.com/playlist?list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) about F#.
 At the end of the first video, I wanted to know more about the forward pipe operator (|>).
 Here are some of the findings I discovered while experimenting with the operator:
 
