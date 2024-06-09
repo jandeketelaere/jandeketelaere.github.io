@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    display: grid;
+    /* grid-template-columns: 5% 25% 25% 25% 20%; */
+    grid-template-columns: 90px 1fr 1fr 1fr 345px;
+}
+
+.opponent-graveyard {
+    grid-column: 1;
+}
+
+.opponent-hand {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: dashed black 2px;
+    gap: 5px;
+}
+
+.opponent-player-information {
+    grid-column: 5;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.opponent-in-play-lands {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: left;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+}
+
+.opponent-in-play-enchantments {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: left;
+    grid-column: 4;
+    margin-left: 5px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+}
+
+.opponent-in-play-creatures {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+}
+
+.card {
+    transition: transform 0.4s;
+}
+
+.card.tapped {
+    transform: rotate(90deg);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 140px;
+}
+
+.graveyard-card {
+    width: 75px;
+    height: 105px;
+}
+
+.graveyard-card img {
+    width: 75px;
+    height: 105px;
+}
+
+.player-in-play-creatures {
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.card-display {
+    grid-column: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 468px;
+}
+
+.displayed-card {
+    width: 336px;
+    height: 468px;
+}
+
+.displayed-card img {
+    width: 336px;
+    height: 468px;
+}
+
+.player-graveyard {
+    grid-column: 1;
+}
+
+.player-in-play-lands {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: left;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    border-left: solid black 1px;
+}
+
+.player-in-play-enchantments {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: left;
+    grid-column: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    margin-left: 5px;
+    border-right: solid black 1px;
+}
+
+.player-hand {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: dashed black 2px;
+    border-bottom: solid black 1px;
+}
+
+.player-player-information {
+    grid-column: 5;
+    margin-left: 5px;
+}
+
+.menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu div {
+    padding: 5px;
+}
+
+.menu div:hover {
+    background-color: #f0f0f0;
+}
